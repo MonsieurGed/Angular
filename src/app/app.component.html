@@ -1,0 +1,23 @@
+<h1>Liste des Pokémons</h1>
+<input type="text" (click)="clickPokemon1($event)" />
+<p (click)="clickPokemon2(PokemonList[0].id)">{{ PokemonList[0].name }}</p>
+<p (click)="clickPokemon2(PokemonList[1].id)">{{ PokemonList[1].name }}</p>
+<p (click)="clickPokemon2(PokemonList[2].id)">{{ PokemonList[2].name }}</p>
+<p (click)="clickPokemon2(PokemonList[3].id)">{{ PokemonList[3].name }}</p>
+<p (click)="clickPokemon2(PokemonList[4].id)">{{ PokemonList[4].name }}</p>
+<p (click)="clickPokemon2(PokemonList[5].id)">{{ PokemonList[5].name }}</p>
+<p (click)="clickPokemon2(PokemonList[6].id)">{{ PokemonList[6].name }}</p>
+<p (click)="clickPokemon2(PokemonList[7].id)">{{ PokemonList[7].name }}</p>
+<p (click)="clickPokemon2(PokemonList[8].id)">{{ PokemonList[8].name }}</p>
+<p (click)="clickPokemon2(PokemonList[9].id)">{{ PokemonList[9].name }}</p>
+<p (click)="clickPokemon2(PokemonList[10].id)">{{ PokemonList[10].name }}</p>
+<p (click)="clickPokemon2(PokemonList[11].id)">{{ PokemonList[11].name }}</p>
+<br />
+<p>Entrer un nombre</p>
+<input
+  type="number"
+  #input
+  (keyup)="typePokemon(input.value)"
+  (click)="typePokemon(input.value)"
+/>
+<p>Vous avez choisi {{ pokemonSelected.name }}</p>
